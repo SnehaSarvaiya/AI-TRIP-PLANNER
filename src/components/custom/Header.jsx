@@ -104,9 +104,9 @@ function Header() {
 
 
     // </div>
-  
-  <div className='p-2 shadow-sm flex items-center justify-between'>
-      
+
+    <div className='p-2 shadow-sm flex items-center justify-between'>
+
       {/* Left — Logo */}
       <img src="/logo.svg" alt="Logo" />
 
@@ -114,7 +114,7 @@ function Header() {
       <div className='flex items-center gap-6'>
         {user ? (
           <>
-            <Button variant='outline' className="p-4">My Trips</Button>
+            <Button variant='outline' className="p-4" onClick={getUserProfile}>My Trips</Button>
             <Popover>
               <PopoverTrigger asChild>
                 <img src={user?.picture} className='w-10 h-10 rounded-full cursor-pointer' alt="profile" />
